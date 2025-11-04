@@ -1,4 +1,4 @@
-- name: catalogue server
+- name: setup catalogue server
   hosts: catalogue
   become: yes
   tasks:
@@ -35,6 +35,7 @@
     ansible.builtin.unarchive:
       src: /tmp/catalogue.zip
       dest: /app
+      remote_src: yes
 
 
 
