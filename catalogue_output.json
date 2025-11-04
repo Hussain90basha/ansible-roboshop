@@ -1,0 +1,22 @@
+{
+        "changed": true,
+        "cmd": [
+            "mongosh",
+            "mongodb.eliyas.fun",
+            "--quiet",
+            "--eval",
+            "db.getMongo().getDBNames().indexOf('catalogue')"
+        ],
+        "delta": "0:00:01.180415",
+        "end": "2025-11-04 14:04:20.850301",
+        "failed": false,
+        "msg": "",
+        "rc": 0,
+        "start": "2025-11-04 14:04:19.669886",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "-1",
+        "stdout_lines": [
+            "-1"
+        ]
+    }
