@@ -58,7 +58,7 @@
       record: "{{ domain_name }}" # eliyas.fun  
       type: A
       ttl: 1
-      value: "{{ item.instances[0].e_public_ip_address }}"
+      value: "{{ item.instances[0].public_ip_address }}"
       overwrite: true
       when: item.ite == "frontend"
     loop: "{{ ec2_output.results }}" 
