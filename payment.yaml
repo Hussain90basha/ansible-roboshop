@@ -29,6 +29,11 @@
       path: /app
       state: absent
 
+  - name: create app directory
+    ansible.builtin.file:
+      state: directory
+      path: /app  
+
   - name: Delete payment file
     ansible.builtin.file:
       path: /tmp/payment.zip
