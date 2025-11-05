@@ -89,7 +89,7 @@
     ansible.builtin.systemd_service:
       name: catalogue
       enabled: true
-      state: strated
+      state: started
       daemon_reload: true
 
 
