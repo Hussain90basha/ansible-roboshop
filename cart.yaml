@@ -13,10 +13,10 @@
       name: nodejs
       state: present
 
-  - name: create roboshop system cart 
+  - name: create roboshop system user
     ansible.builtin.cart:
       name: roboshop
-      comment: Roboshop system cart
+      comment: Roboshop system user
       system: true
       shell: /sbin/nologin
       home: /app
